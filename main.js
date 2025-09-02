@@ -1,14 +1,14 @@
-const estudiantes = Array(10).fill(null);
+const estudiantes = Array(5).fill(null);
 
 function ingreso() {
   let posicion = 0;
   while (true) {
-    const posStr = prompt("--------------------------------------\nLa tabla admite 10 estudiantes.\nIngrese la posición para registrar (1-10):\nEscriba 11 para volver al menú:");
+    const posStr = prompt("--------------------------------------\nLa tabla admite 5 estudiantes.\nIngrese la posición para registrar (1-5):\nEscriba 6 para volver al menú:");
     if (posStr === null) return; // Cancel -> exit to menu
     posicion = parseInt(posStr, 10);
 
-    if (posicion === 11) break;
-    if (isNaN(posicion) || posicion < 1 || posicion > 10) {
+    if (posicion === 6) break;
+    if (isNaN(posicion) || posicion < 1 || posicion > 5) {
       alert("❌ Posición inválida. Intente de nuevo.");
       continue;
     }
